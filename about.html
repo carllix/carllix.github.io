@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7595a8e2e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <h1><span>Carlo</span> Angkisan</h1>
+        <ul id="side-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html" class="nav-active">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="container">
+        <div class="about">
+            <h1><span>About</span> Me</h1>
+            <div class="about-row">
+                <div class="about-col-left">
+                    <img src="img/about-car.jpg" alt="Foto Saya;b">
+                </div>
+                <div class="about-col-right">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis sunt deserunt natus nemo commodi earum veniam libero aspernatur doloremque in excepturi, alias asperiores temporibus praesentium est expedita accusamus assumenda nostrum?</p>
+                    <div class="tab-titles">
+                        <div class="tab-title active-title" onclick="activetab('skills')">Skills</div>
+                        <div class="tab-title" onclick="activetab('education')">Education</div>
+                        <div class="tab-title" onclick="activetab('experience')">Experience</div>
+                    </div>
+                    <div class="tab-content active-content" id="skills">
+                        <p><span>Skill 1</span><br>Lorem ipsum lorem</p>
+                        <p><span>Skill 2</span><br>Lorem ipsum lorem</p>
+                        <p><span>Skill 3</span><br>Lorem ipsum lorem</p>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <p><span>2023 - Present</span><br>STEI-K ITB</p>
+                        <p><span>2020 - 2023</span><br>SMAN 1 Bekasi</p>
+                        <p><span>2017 - 2020</span><br>SMPN 3 Bekasi</p>
+                        <p><span>2011 - 2017</span><br>SDN Bekasi Jaya XIII</p>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <p><span>Experience 1</span><br>Lorem ipsum lorem</p>
+                        <p><span>Experience 2</span><br>Lorem ipsum lorem</p>
+                        <p><span>Experience 3</span><br>Lorem ipsum lorem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

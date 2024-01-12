@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7595a8e2e3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <h1><span>Carlo</span> Angkisan</h1>
+        <ul id="side-menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" class="nav-active">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <div class="container">
+        <div class="contact">
+            <h1><span>Contact</span> Me</h1>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="text" placeholder="Email Address" required>
+                <textarea name="Message" rows="11" placeholder="Write Message Here" required></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
